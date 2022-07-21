@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.company.mvc.dept.DepartmentMapper">
+	
+	<select id="getDeptList" resultType="com.company.mvc.dept.DepartmentVO">
+		SELECT *
+		FROM DEPARTMENTS
+		ORDER BY DEPARTMENT_ID ASC;
+	</select>
+
+</mapper>
